@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Ramachandran Home Page</title>
+  <meta name="description" content="" />
+  <link rel="canonical" href="" />
+  <meta name="keywords" content="" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Required css -->
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="css/owl.theme.min.css">
+  <!-- custom css  -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<style>
+  .checkout_right_section h2 {
+    font-family: stangith;
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+  /* Main Section */
+.checout_main_section {
+  font-family: 'Arial', sans-serif;
+  padding: 40px 20px;
+  background: #fff;
+  color: #111;
+}
+
+.product-details h2 {
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Reviews */
+.reviews {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviews .stars i {
+  color: #f5c518; /* yellow stars */
+  margin-right: 3px;
+}
+
+.reviews span:last-child {
+    margin-left: 10px;
+    font-size: 14px;
+    color: #000;
+    font-family: 'Poppins-Regular';
+}
+.price-new p {
+    font-family: 'Poppins-Regular';
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.description {
+    font-size: 14px;
+    color: #A0A0A0;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-family: 'Poppins-Light';
+}
+/* Options */
+.product-options {
+  margin-bottom: 20px;
+}
+.product-options label {
+    display: block;
+    margin-bottom: 8px;
+    font-family: 'Poppins-Regular';
+    font-weight: 500;
+}
+.sizes button {
+    width: 15%;
+}
+.product-options .sizes button, .product-options .materials button {
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+    color: #A0A0A0;
+    font-family: 'Poppins-Light';
+}
+.product-options .sizes button:hover,
+.product-options .materials button:hover {
+  border-color: #010101;
+}
+
+/* Active Button */
+.product-options .sizes button.active,
+.product-options .materials button.active {
+  background: #010101;
+  color: #fff;
+  border-color: #010101;
+}
+/* Quantity */
+.quantity label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+.quantity-control {
+  display: flex;
+  align-items: center;
+}
+
+.quantity-control button {
+  width: 35px;
+  height: 35px;
+  border:none;
+  background: #fff;
+  cursor: pointer;
+  font-size: 18px;
+    font-family: 'Poppins-Regular';
+}
+
+.quantity-control input {
+  width: 50px;
+  text-align: center;
+  border: none;
+  height: 35px;
+  margin: 0 5px;
+  font-size: 16px;
+      font-family: 'Poppins-Regular';
+}
+button.add-to-cart-new {
+    background: none;
+    font-family: 'Poppins-Regular';
+}
+/* Action Buttons */
+.actions {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.actions button {
+  flex: 1;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.add-to-cart {
+  border: 1px solid #111;
+  background: #fff;
+  color: #111;
+}
+
+.add-to-cart:hover {
+  background: #111;
+  color: #fff;
+}
+
+.buy-now {
+  border: none;
+  background: #111;
+  color: #fff;
+}
+
+.buy-now:hover {
+  background: #333;
+}
+.main-div {
+    border: 1px solid #A0A0A0;
+    border-radius: 5px;
+    padding: 2px;
+}
+.checout_main_div {
+    display: flex;
+    width: 100%;
+    gap: 50px;
+}
+.checkout_left_section {
+    width: 45%;
+    overflow: hidden;
+}
+.checkout_right_section {
+    width: 55%;
+}
+.sizes {
+    display: flex;
+    gap: 10px;
+}
+.checkout_left_section img {
+    width: 600px;
+    height: 600px;
+}
+</style>
+<body>
+  <!-- Header -->
+  <header>
+    <!-- NAV_BAR_SECTION START -->
+    <nav class="lr-header">
+      <input type="checkbox" id="nav-toggle">
+      <div class="logo">
+        <a href="">
+          <img src="image/logo.png" alt="lr-Logo" title="lr-Logo">
+        </a>
+      </div>
+      <ul class="links">
+        <li><a href="/">Overview</a></li>
+        <li><a href="/">About</a></li>
+        <li class="dropdown-parent">
+          <a href="javascript:void(0)"><span>Work</span></a>
+          <ul class="dropdown">
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)"></a>
+            </li>
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)">Repairs</a>
+            </li>
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)">Performance </a>
+
+            </li>
+            <li class="dropdown-mainchild">
+              <a href=""> Solutions</a>
+
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Video</a></li>
+        <li><a href="">News</a></li>
+        <li class="dropdown-parent">
+          <a href="javascript:void(0)"><span>Shop</span></a>
+          <ul class="dropdown">
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)"></a>
+            </li>
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)">Repairs </a>
+            </li>
+            <li class="dropdown-mainchild">
+              <a href="javascript:void(0)">Performance</a>
+
+            </li>
+            <li class="dropdown-mainchild">
+              <a href=""> Solutions</a>
+
+            </li>
+          </ul>
+        </li>
+        <li><a href="">Book</a></li>
+        <li><a href="">BTS</a></li>
+
+      </ul>
+      <label for="nav-toggle" class="icon-burger">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+      </label>
+    </nav>
+    <!-- NAV_BAR_SECTION END -->
+  </header>
+  <!-- Header -->
+  <!-- Check out -->
+
+  <section class="checout_main_section">
+    <div class="container">
+      <div class="checout_main_div">
+        <div class="checkout_left_section">
+
+<img src="image/detail-image-1.png" alt="">
+
+        </div>
+        <div class="checkout_right_section">
+
+            <h2>Lorem ipsum dolor sit amet</h2>
+
+            <!-- Reviews with Stars -->
+            <div class="reviews">
+              <span class="stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <span>(15 Reviews)</span>
+            </div>
+
+            <!-- Price -->
+            <div class="price-new">
+              <p>₹ 21,000</p>
+            </div>
+
+            <!-- Description -->
+            <p class="description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla quis massa nec tincidunt.
+              In vel mauris nulla. Mauris congue non nisi non feugiat. Sed nibh ex, feugiat vitae convallis sed,
+              scelerisque vitae lacus.
+            </p>
+
+            <!-- Size Selection -->
+            <div class="product-options">
+              <label>Size ( in inches )</label>
+              <div class="sizes">
+                <button>24x12</button>
+                <button>36x18</button>
+                <button>48x24</button>
+                <button>60x30</button>
+                <button>72x36</button>
+                <button>84x42</button>
+              </div>
+            </div>
+
+            <!-- Material Selection -->
+            <div class="product-options">
+              <label>Material</label>
+              <div class="materials">
+                <button>Lorem ipsum dolor</button>
+                <button>Lorem ipsum dolor</button>
+                <button>Lorem ipsum dolor</button>
+              </div>
+            </div>
+
+           <div class="quantity">
+  <label>Quantity</label>
+  <div class="quantity-control">
+    <div class="main-div">
+      <button class="qty-btn minus">-</button>
+      <input type="text" value="1" class="qty-input">
+      <button class="qty-btn plus">+</button>
+    </div>
+  </div>
+</div>
+
+            <!-- Action Buttons -->
+            <div class="actions">
+              <button class="add-to-cart-new"><i class="fa-solid fa-cart-shopping"></i>  Add to Cart</button>
+              <button class="buy-now"><i class="fa-solid fa-bag-shopping"></i> Buy Now</button>
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Check out -->
+  <!-- Customer Reviews  -->
+  <section class="customer_review_section">
+    <div class="container">
+      <h2>Customer Reviews</h2>
+
+      <div class="customer_main_div owl-carousel owl-theme">
+
+        <!-- Review 1 -->
+        <div class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="header">
+            <div class="avatar">
+              <img src="image/avater.png" alt="">
+            </div>
+            <div class="meta">
+              <div class="title-row">
+                <h3 class="title" itemprop="author">Lorem ipsum dolor</h3>
+              </div>
+              <div class="rating-row">
+                <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <meta itemprop="ratingValue" content="5" />
+                </div>
+                <div class="time">
+                  <time itemprop="datePublished" datetime="2025-08-20">• 3 Weeks ago</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="content" itemprop="reviewBody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla quis massa nec tincidunt. In vel mauris nulla.
+          </p>
+        </div>
+
+        <!-- Review 2 -->
+        <div class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="header">
+            <div class="avatar">
+              <img src="image/avater.png" alt="">
+            </div>
+            <div class="meta">
+              <div class="title-row">
+                <h3 class="title" itemprop="author">John Doe</h3>
+              </div>
+              <div class="rating-row">
+                <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <meta itemprop="ratingValue" content="5" />
+                </div>
+                <div class="time">
+                  <time itemprop="datePublished" datetime="2025-08-20">• 2 Weeks ago</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="content" itemprop="reviewBody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla quis massa nec tincidunt. In vel mauris nulla.
+          </p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card" itemscope itemtype="https://schema.org/Review">
+          <div class="header">
+            <div class="avatar">
+              <img src="image/avater.png" alt="">
+            </div>
+            <div class="meta">
+              <div class="title-row">
+                <h3 class="title" itemprop="author">Jane Smith</h3>
+              </div>
+              <div class="rating-row">
+                <div class="stars" itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <meta itemprop="ratingValue" content="5" />
+                </div>
+                <div class="time">
+                  <time itemprop="datePublished" datetime="2025-08-10">• 1 Month ago</time>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="content" itemprop="reviewBody">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce fringilla quis massa nec tincidunt. In vel mauris nulla.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews  -->
+  <!-- You May Like This  -->
+  <section class="product_list_section">
+    <div class="container">
+      <h2>You May <span>Like This</span></h2>
+      <div class="product-grid">
+        <div class="product_shop" data-category="custom-frame">
+          <span class="heart">&#10084;</span>
+          <a href="#" class="add-to-cart">Add to cart</a>
+          <img src="image/shop-image-1.png" alt="Product">
+          <div class="product-info">
+            <h3>Lorem ipsum dolor</h3>
+            <div class="price">
+              <p>₹ 72.00/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="product_shop" data-category="photo-frame">
+          <span class="heart">&#10084;</span>
+          <a href="#" class="add-to-cart">Add to cart</a>
+          <img src="image/shop-image-2.png" alt="Product">
+          <div class="product-info">
+            <h3>Lorem ipsum dolor</h3>
+            <div class="price">
+              <p>₹ 72.00/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="product_shop" data-category="fine-art">
+          <span class="heart">&#10084;</span>
+          <a href="#" class="add-to-cart">Add to cart</a>
+          <img src="image/shop-image-3.png" alt="Product">
+          <div class="product-info">
+            <h3>Lorem ipsum dolor</h3>
+            <div class="price">
+              <p>₹ 72.00/-</p>
+            </div>
+          </div>
+        </div>
+        <div class="product_shop" data-category="custom-frame">
+          <span class="heart">&#10084;</span>
+          <a href="#" class="add-to-cart">Add to cart</a>
+          <img src="image/shop-image-4.png" alt="Product">
+          <div class="product-info">
+            <h3>Lorem ipsum dolor</h3>
+            <div class="price">
+              <p>₹ 72.00/-</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- You May Like This  -->
+  <!-- footer  -->
+  <div class="footer-bottom">
+    <p>© 2025 All rights reserved.</p>
+    <p>Design & Developed By <a href="https://grocat.in/" target="_blank">GroCat</a></p>
+    <ul class="footer-policy">
+      <li><a href="#">Terms of Service</a></li>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Cookies</a></li>
+    </ul>
+  </div>
+  <!-- footer -->
+  <!-- <script type="text/javascript" src="js/jquery-3.6.4.slim.min.js"></script> -->
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+  <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/myscript.js"></script>
+  <script type="text/javascript" src="js/simplePagination.js"></script>
+</body>
+
+</html>
